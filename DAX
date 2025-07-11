@@ -1,0 +1,51 @@
+Newspaper-Style FAQ = 
+"
+<div style='font-family: Open Sans, sans-serif; background-color: #333; color: #fff; text-align: center; padding: 1em;'>
+  <h3 style='margin-bottom: 10px; font-size: 20px;'>Newspaper-Style FAQ with White Border</h3>
+  <p style='margin-bottom: 20px; font-size: 14px; max-width: 700px; margin: 0 auto;'>
+    Newspaper style FAQ with black background colour and white border — an old-school FAQ layout built with HTML and CSS (no JavaScript needed for Power BI). 
+    This FAQ is optimised for technical SEO, and the copy-paste code is fully adjustable to match your theme colours. 
+    This tool is user-friendly, lightweight, and requires no plugin.
+  </p>
+
+  <h3 style='margin-bottom: 10px; font-size: 20px;'>Power BI FAQ: Using HTML Accordion</h3>
+
+  <div style='max-width: 700px; margin: 0 auto; text-align: left;'>
+    <article style='border: 1px solid #fff; padding: 1em; margin-bottom: 1em;'>
+      <input id='article1' type='radio' name='articles' checked style='display:none;'>
+      <label for='article1' style='display:block; cursor:pointer;'><h3 style='margin:0;'>Can I use HTML for FAQs in Power BI?</h3></label>
+      <div style='max-height: 0; overflow: hidden; transition: max-height 0.5s ease;'> 
+        <p>Yes! You can create a custom FAQ accordion in Power BI using only HTML and CSS. Just build your code as a DAX measure and use an HTML Viewer custom visual.</p>
+      </div>
+    </article>
+
+    <article style='border: 1px solid #fff; padding: 1em; margin-bottom: 1em;'>
+      <input id='article2' type='radio' name='articles' style='display:none;'>
+      <label for='article2' style='display:block; cursor:pointer;'><h3 style='margin:0;'>Do I need JavaScript for this?</h3></label>
+      <div style='max-height: 0; overflow: hidden; transition: max-height 0.5s ease;'>
+        <p>No JavaScript is needed. This method uses radio buttons and labels with CSS only, so it works inside Power BI Service and Desktop without issue.</p>
+      </div>
+    </article>
+
+    <article style='border: 1px solid #fff; padding: 1em; margin-bottom: 1em;'>
+      <input id='article3' type='radio' name='articles' style='display:none;'>
+      <label for='article3' style='display:block; cursor:pointer;'><h3 style='margin:0;'>How do I link this to my data?</h3></label>
+      <div style='max-height: 0; overflow: hidden; transition: max-height 0.5s ease;'>
+        <p>You can store your FAQs in a data table and use CONCATENATEX in DAX to build the HTML dynamically. This makes it flexible if your FAQs change or need filtering.</p>
+      </div>
+    </article>
+
+    <article style='border: 1px solid #fff; padding: 1em; margin-bottom: 1em;'>
+      <input id='article4' type='radio' name='articles' style='display:none;'>
+      <label for='article4' style='display:block; cursor:pointer;'><h3 style='margin:0;'>What visuals do I need?</h3></label>
+      <div style='max-height: 0; overflow: hidden; transition: max-height 0.5s ease;'>
+        <p>Use an HTML Viewer custom visual like HTML Content or HTML Text Styler from AppSource. Add your measure and it will render your FAQ accordion perfectly.</p>
+      </div>
+    </article>
+  </div>
+
+  <style>
+    input[type='radio']:checked + label + div { max-height: 1000px !important; }
+  </style>
+</div>
+"
